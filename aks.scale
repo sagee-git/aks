@@ -6,4 +6,5 @@ rgname="$name-rg1"
 
 akscl="$name-aks1"
 
-az aks get-credentials --resource-group $rgname --name $akscl
+az aks scale -g $rgname --name $akscl \
+    --node-count 1
