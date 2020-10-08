@@ -1,0 +1,9 @@
+#!/bin/bash
+read -p "Naming Standard?
+" name
+
+rgname="$name-rg1"
+
+akscl="$name-aks1"
+
+az aks get-credentials --resource-group $rgname --name $akscl
